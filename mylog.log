@@ -1,0 +1,131 @@
+14:55:46.642 [main] INFO  com.dayone.Application - Starting Application using Java 11.0.17 on hs-gram with PID 19740 (C:\dev\workspaceIntelliJ\sample\build\classes\java\main started by dlgks in C:\dev\workspaceIntelliJ\sample)
+14:55:46.647 [main] INFO  com.dayone.Application - No active profile set, falling back to default profiles: default
+14:55:48.085 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:55:48.090 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:55:48.417 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 310 ms. Found 3 JPA repository interfaces.
+14:55:48.444 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:55:48.446 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:55:48.480 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:55:48.506 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:55:48.508 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:55:48.509 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+14:55:49.193 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@73c3cd09' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:55:49.198 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:55:51.537 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:55:51.558 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:55:51.560 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:55:51.561 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+14:55:51.791 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:55:51.792 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5043 ms
+14:55:51.891 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:55:52.280 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:55:52.294 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+14:55:52.798 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:55:52.942 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+14:55:53.340 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:55:53.656 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+14:55:55.017 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:55:55.031 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:55:56.036 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:55:56.840 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+14:55:56.887 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@753c7411, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d1f168, org.springframework.security.web.header.HeaderWriterFilter@1d722bff, org.springframework.security.web.authentication.logout.LogoutFilter@26bbbe9e, com.dayone.security.JwtAuthenticationFilter@7607340f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28532753, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e1e19af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ba015b1, org.springframework.security.web.session.SessionManagementFilter@2bd158ea, org.springframework.security.web.access.ExceptionTranslationFilter@72851503, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ebf9c2d]
+14:55:57.752 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:55:57.769 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+14:55:57.917 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:55:57.921 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:55:57.929 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:55:57.933 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+14:55:57.933 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+14:55:57.939 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+14:55:57.940 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+14:55:57.952 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:55:57.988 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+14:56:23.633 [main] INFO  com.dayone.Application - Starting Application using Java 11.0.17 on hs-gram with PID 18012 (C:\dev\workspaceIntelliJ\sample\build\classes\java\main started by dlgks in C:\dev\workspaceIntelliJ\sample)
+14:56:23.638 [main] INFO  com.dayone.Application - No active profile set, falling back to default profiles: default
+14:56:25.130 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:56:25.136 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:56:25.447 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 291 ms. Found 3 JPA repository interfaces.
+14:56:25.466 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:56:25.467 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:56:25.497 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:56:25.500 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:56:25.501 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:56:25.502 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+14:56:26.225 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@73c3cd09' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:56:26.233 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:56:28.351 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:56:28.370 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:56:28.371 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:56:28.371 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+14:56:28.580 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:56:28.581 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4850 ms
+14:56:28.684 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:56:29.047 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:56:29.070 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+14:56:29.548 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:56:29.678 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+14:56:30.020 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:56:30.320 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+14:56:31.535 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:56:31.547 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:56:32.504 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:56:33.325 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+14:56:33.372 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@753c7411, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d1f168, org.springframework.security.web.header.HeaderWriterFilter@1d722bff, org.springframework.security.web.authentication.logout.LogoutFilter@26bbbe9e, com.dayone.security.JwtAuthenticationFilter@7607340f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28532753, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e1e19af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ba015b1, org.springframework.security.web.session.SessionManagementFilter@2bd158ea, org.springframework.security.web.access.ExceptionTranslationFilter@72851503, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ebf9c2d]
+14:56:34.250 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:56:34.302 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:56:34.325 [main] INFO  com.dayone.Application - Started Application in 11.727 seconds (JVM running for 12.632)
+14:56:54.056 [main] INFO  com.dayone.Application - Starting Application using Java 11.0.17 on hs-gram with PID 13008 (C:\dev\workspaceIntelliJ\sample\build\classes\java\main started by dlgks in C:\dev\workspaceIntelliJ\sample)
+14:56:54.061 [main] INFO  com.dayone.Application - No active profile set, falling back to default profiles: default
+14:56:55.568 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:56:55.574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:56:55.922 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 328 ms. Found 3 JPA repository interfaces.
+14:56:55.953 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:56:55.956 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:56:55.996 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:56:56.000 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:56:56.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+14:56:56.002 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+14:56:56.674 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@73c3cd09' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:56:56.680 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:56:58.727 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:56:58.743 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:56:58.744 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:56:58.745 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+14:56:58.939 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:56:58.940 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4778 ms
+14:56:59.019 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:56:59.430 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:56:59.443 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+14:56:59.891 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:57:00.051 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+14:57:00.453 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:57:00.757 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+14:57:01.904 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:57:01.916 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:57:03.016 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:57:03.993 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+14:57:04.056 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@753c7411, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d1f168, org.springframework.security.web.header.HeaderWriterFilter@1d722bff, org.springframework.security.web.authentication.logout.LogoutFilter@26bbbe9e, com.dayone.security.JwtAuthenticationFilter@7607340f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28532753, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e1e19af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ba015b1, org.springframework.security.web.session.SessionManagementFilter@2bd158ea, org.springframework.security.web.access.ExceptionTranslationFilter@72851503, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ebf9c2d]
+14:57:04.912 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:57:04.959 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:57:04.977 [main] INFO  com.dayone.Application - Started Application in 11.904 seconds (JVM running for 12.74)
+14:57:40.181 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:57:40.183 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:57:40.185 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14:57:45.025 [http-nio-8080-exec-3] INFO  com.dayone.web.AuthController - user login -> grace
+14:58:13.413 [http-nio-8080-exec-5] INFO  c.d.security.JwtAuthenticationFilter - [grace] -> /company
+21:18:01.338 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h25m37s98ms248µs900ns).
